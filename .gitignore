@@ -103,10 +103,7 @@ results/
 outputs/
 visualizations/
 
-# Keep .gitkeep files
-!results/.gitkeep
-!outputs/.gitkeep
-!visualizations/.gitkeep
+
 
 # ============================================================================
 # RAG & KNOWLEDGE BASE
