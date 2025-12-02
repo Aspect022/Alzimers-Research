@@ -1,0 +1,6 @@
+{
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "collection_name": "clinical_knowledge",
+  "n_documents": 19,
+  "top_k": 5
+}

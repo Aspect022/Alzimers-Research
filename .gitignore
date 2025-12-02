@@ -1,0 +1,236 @@
+# ============================================================================
+# KnoAD-Net Project - Git Ignore Configuration
+# ============================================================================
+
+# ============================================================================
+# DATA FILES (Too large for Git - PRIMARY EXCLUSION)
+# ============================================================================
+data/
+!data/.gitkeep
+
+# Exclude all data subdirectories
+data/raw/
+data/processed/
+data/splits/
+
+# ============================================================================
+# PYTHON
+# ============================================================================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# ============================================================================
+# MACHINE LEARNING & MODEL FILES
+# ============================================================================
+# Model checkpoints (keep only best models tracked explicitly)
+checkpoints/*.pth
+checkpoints/*.pt
+!checkpoints/best_*.pth
+
+# Model outputs
+models/*.pth
+models/*.pt
+models/*.h5
+models/*.pkl
+!models/.gitkeep
+
+# TensorBoard logs
+logs/
+runs/
+tb_logs/
+
+# Weights & Biases
+wandb/
+
+# MLflow
+mlruns/
+
+# ============================================================================
+# RESULTS & OUTPUTS
+# ============================================================================
+# Results directory (contains experiment outputs)
+results/
+outputs/
+visualizations/
+
+# Keep .gitkeep files
+!results/.gitkeep
+!outputs/.gitkeep
+!visualizations/.gitkeep
+
+# ============================================================================
+# RAG & KNOWLEDGE BASE
+# ============================================================================
+# ChromaDB vector store
+rag_knowledge/chroma_db/
+
+# Embeddings cache
+*.index
+*.faiss
+
+# ============================================================================
+# JUPYTER NOTEBOOKS
+# ============================================================================
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# Jupyter Notebook outputs (if needed)
+# *.ipynb
+
+# ============================================================================
+# IDE & EDITOR FILES
+# ============================================================================
+# VSCode
+.vscode/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+.idea_modules/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# ============================================================================
+# OPERATING SYSTEM
+# ============================================================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+
+# ============================================================================
+# PROJECT SPECIFIC
+# ============================================================================
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# Log files
+*.log
+
+# Configuration files with sensitive data (if any)
+# config_local.py
+# secrets.json
+
+# Backup files
+*.backup
+*_backup.py
+
+# Test outputs
+test_outputs/
+temp/
+
+# ============================================================================
+# MEDICAL IMAGING FORMATS
+# ============================================================================
+# Large neuroimaging files (already in data/, but explicit for clarity)
+*.nii
+*.nii.gz
+*.hdr
+*.img
+*.dcm
+*.DICOM
+
+# ============================================================================
+# DOCUMENTATION BUILD
+# ============================================================================
+# Sphinx documentation
+docs/_build/
+docs/_static/
+docs/_templates/
+
+# ============================================================================
+# MISCELLANEOUS
+# ============================================================================
+# Archives
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Large files
+*.mp4
+*.avi
+*.mov
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3

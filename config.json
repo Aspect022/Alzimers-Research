@@ -1,0 +1,24 @@
+{
+  "project_root": "D:\\Projects\\AI-Projects\\Alzimers",
+  "dataset": "OASIS1",
+  "n_classes": 3,
+  "class_names": [
+    "CN",
+    "MCI",
+    "AD"
+  ],
+  "random_seed": 42,
+  "image_size": 128,
+  "directories": {
+    "root": "D:\\Projects\\AI-Projects\\Alzimers",
+    "data_raw": "D:\\Projects\\AI-Projects\\Alzimers/data/raw",
+    "data_processed": "D:\\Projects\\AI-Projects\\Alzimers/data/processed",
+    "data_splits": "D:\\Projects\\AI-Projects\\Alzimers/data/splits",
+    "models": "D:\\Projects\\AI-Projects\\Alzimers/models",
+    "checkpoints": "D:\\Projects\\AI-Projects\\Alzimers/checkpoints",
+    "results": "D:\\Projects\\AI-Projects\\Alzimers/results",
+    "logs": "D:\\Projects\\AI-Projects\\Alzimers/logs",
+    "visualizations": "D:\\Projects\\AI-Projects\\Alzimers/visualizations",
+    "rag_knowledge": "D:\\Projects\\AI-Projects\\Alzimers/rag_knowledge"
+  }
+}
