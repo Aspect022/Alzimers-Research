@@ -1,0 +1,47 @@
+
+================================================================================
+KNOADNET DIAGNOSTIC REPORT
+================================================================================
+
+PATIENT INFORMATION
+-------------------
+Age:                72
+Education:          16 years
+APOE4 Status:       1 alleles
+
+COGNITIVE ASSESSMENT
+--------------------
+MMSE Score:         18/30
+MoCA Score:         16/30
+ADAS-Cog:           28/70
+
+MODEL PREDICTION
+----------------
+Diagnosis:          Alzheimer's Disease (AD)
+Confidence:         87.00%
+
+CLINICAL RATIONALE
+------------------
+• MMSE score of 18 suggests mild cognitive impairment
+• MRI analysis shows notable changes in: hippocampus, temporal_lobe, entorhinal_cortex
+
+SUPPORTING CLINICAL GUIDELINES
+-------------------------------
+
+1. NIA-AA 2011 Criteria
+   The National Institute on Aging-Alzheimer's Association (NIA-AA) 2011 criteria 
+        define Alzheimer's disease through biomarkers and clinical symptoms. Key diagnostic 
+        criteria include: (...
+
+RECOMMENDATIONS
+---------------
+• Comprehensive neuropsychological evaluation
+• Consider biomarker testing (CSF or PET)
+• Discuss treatment options with neurologist
+• Caregiver education and support
+• Regular follow-up monitoring
+
+================================================================================
+This report was generated using KnoAD-Net with Retrieval-Augmented Generation.
+For clinical use, please consult with a qualified healthcare professional.
+================================================================================

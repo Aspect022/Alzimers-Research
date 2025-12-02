@@ -1,0 +1,5 @@
+Model,Accuracy,Improvement vs Best Baseline
+ViT-Only,0.6,-
+TabTransformer,0.8,-
+Concat Fusion,0.6,-
+KnoAD-Net,0.6,+-20.00%

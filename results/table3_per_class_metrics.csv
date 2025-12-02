@@ -1,0 +1,4 @@
+Class,Precision,Recall,F1-Score,Support
+CN,0.4000,0.6667,0.5000,3
+MCI,0.7692,0.8333,0.8000,12
+AD,0.0000,0.0000,0.0000,5

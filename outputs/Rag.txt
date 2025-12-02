@@ -1,0 +1,133 @@
+(venv) (base) PS D:\Projects\AI-Projects\Alzimers> python notebook4_rag_module.py
+D:\Projects\AI-Projects\Alzimers\notebook4_rag_module.py:41: SyntaxWarning: invalid escape sequence '\P'
+  PROJECT_ROOT = 'D:\Projects\AI-Projects\Alzimers'
+================================================================================
+KNOADNET - PHASE 4: RAG MODULE
+================================================================================
+✓ Using CPU (PyTorch doesn't support AMD GPU natively)
+✓ Using device: cpu
+
+[1/5] Building Clinical Knowledge Base
+--------------------------------------------------------------------------------
+✓ Created 12 clinical documents
+✓ Split into 19 chunks
+
+[2/5] Embedding Documents
+--------------------------------------------------------------------------------
+Loading sentence transformer model...
+✓ Model loaded: all-MiniLM-L6-v2
+
+Embedding document chunks...
+Batches: 100%|███████████| 1/1 [00:00<00:00,  1.44it/s]
+✓ Created embeddings with shape: (19, 384)
+
+[3/5] Creating Vector Store
+--------------------------------------------------------------------------------
+✓ Created new collection: clinical_knowledge
+
+Adding documents to vector store...
+✓ Added 19 documents to vector store
+
+[4/5] Implementing Retrieval Pipeline
+--------------------------------------------------------------------------------
+
+Testing RAG retrieval...
+
+✓ Retrieved 5 relevant documents
+
+Top 3 Retrieved Documents:
+
+1. Source: AD Progression Stages
+   Category: disease_progression
+   Text: Alzheimer's disease typically progresses through distinct stages: (1) Preclinical AD:
+        biomarker positive but cognitively normal, may last 10-...
+
+2. Source: NIA-AA 2011 Criteria
+   Category: diagnostic_criteria
+   Text: The National Institute on Aging-Alzheimer's Association (NIA-AA) 2011 criteria
+        define Alzheimer's disease through biomarkers and clinical sym...
+
+3. Source: Clinical Decision Support
+   Category: clinical_decision_support
+   Text: Comprehensive Alzheimer's assessment requires integration of multiple data sources:
+        (1) Clinical history: gradual onset, progressive decline,...
+
+✓ Generated diagnostic explanation
+
+[5/5] Integration Testing
+--------------------------------------------------------------------------------
+
+Sample Diagnostic Report:
+
+================================================================================
+KNOADNET DIAGNOSTIC REPORT
+================================================================================
+
+PATIENT INFORMATION
+-------------------
+Age:                72
+Education:          16 years
+APOE4 Status:       1 alleles
+
+COGNITIVE ASSESSMENT
+--------------------
+MMSE Score:         18/30
+MoCA Score:         16/30
+ADAS-Cog:           28/70
+
+MODEL PREDICTION
+----------------
+Diagnosis:          Alzheimer's Disease (AD)
+Confidence:         87.00%
+
+CLINICAL RATIONALE
+------------------
+• MMSE score of 18 suggests mild cognitive impairment
+• MRI analysis shows notable changes in: hippocampus, temporal_lobe, entorhinal_cortex
+
+SUPPORTING CLINICAL GUIDELINES
+-------------------------------
+
+1. NIA-AA 2011 Criteria
+   The National Institute on Aging-Alzheimer's Association (NIA-AA) 2011 criteria
+        define Alzheimer's disease through biomarkers and clinical symptoms. Key diagnostic
+        criteria include: (...
+
+RECOMMENDATIONS
+---------------
+• Comprehensive neuropsychological evaluation
+• Consider biomarker testing (CSF or PET)
+• Discuss treatment options with neurologist
+• Caregiver education and support
+• Regular follow-up monitoring
+
+================================================================================
+This report was generated using KnoAD-Net with Retrieval-Augmented Generation.
+For clinical use, please consult with a qualified healthcare professional.
+================================================================================
+
+
+Saving RAG components...
+✓ Saved RAG configuration
+✓ Saved sample report
+
+================================================================================
+RAG MODULE COMPLETE!
+================================================================================
+
+Summary:
+--------
+✓ Clinical knowledge base:  12 documents
+✓ Document chunks:           19 chunks
+✓ Vector store:              ChromaDB with 19 embeddings
+✓ Retrieval system:          Ready for inference
+
+Files Saved:
+------------
+✓ Vector store:      D:\Projects\AI-Projects\Alzimers/rag_knowledge/chroma_db/
+✓ RAG config:        D:\Projects\AI-Projects\Alzimers/rag_knowledge/rag_config.json
+✓ Sample report:     D:\Projects\AI-Projects\Alzimers/results/sample_rag_report.txt
+
+Next Step:
+----------
+Run Notebook 5: Comprehensive Evaluation & Paper Results

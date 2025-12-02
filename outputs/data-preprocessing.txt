@@ -1,0 +1,144 @@
+(venv) (base) PS D:\Projects\AI-Projects\Alzimers> python phase1_data_pipeline.py
+KNOADNET - PHASE 1: DATA PIPELINE (OASIS-1)
+Project root: D:\Projects\AI-Projects\Alzimers
+Dataset: OASIS1
+Classes: ['CN', 'MCI', 'AD']
+
+[1/7] Loading clinical data
+Loaded OASIS-1 clinical data: D:\Projects\AI-Projects\Alzimers\data\raw\tabular\oasis_cross-sectional.csv
+Total subjects in clinical file: 436
+Columns: ['ID', 'M/F', 'Hand', 'Age', 'Educ', 'SES', 'MMSE', 'CDR', 'eTIV', 'nWBV', 'ASF', 'Delay']
+
+[2/7] Creating Diagnosis Labels (3-Class)
+
+Diagnosis Distribution:
+diagnosis
+CN     135
+MCI     70
+AD      30
+Name: count, dtype: int64
+
+Percentage:
+diagnosis
+CN     57.446809
+MCI    29.787234
+AD     12.765957
+Name: proportion, dtype: float64
+
+MMSE by Diagnosis:
+           count       mean       std   min    25%   50%   75%   max
+diagnosis
+AD          30.0  21.233333  3.997269  15.0  19.25  21.5  23.0  29.0
+CN         135.0  29.096296  1.125512  25.0  29.00  29.0  30.0  30.0
+MCI         70.0  25.642857  3.501700  14.0  23.25  27.0  28.0  30.0
+
+[3/7] Checking MRI Files (disc1-disc6)
+--------------------------------------------------------------------------------
+
+📊 Subject Discovery Summary (disc1-disc6):
+  - disc1: 25 subjects
+  - disc2: 22 subjects
+  - disc3: 19 subjects
+  - disc4: 18 subjects
+  - disc5: 20 subjects
+  - disc6: 8 subjects
+  Total unique subjects: 112
+
+✓ Subjects discovered: 112
+✓ Subjects with both MRI and clinical data: 100
+
+[4/7] Preprocessing MRI (single axial slice, resized)
+Processing 100 MRI scans...
+Preprocessing MRI: 100%|█████████████████████████████████████████████████████████████| 100/100 [00:58<00:00,  1.71it/s]
+Successfully processed: 100 scans
+
+[5/7] Feature Engineering
+Merged dataset: 100 subjects
+
+Missing values before imputation:
+ID                  0
+M/F                 0
+Hand                0
+Age                 0
+Educ                0
+SES                11
+MMSE                0
+CDR                 0
+eTIV                0
+nWBV                0
+ASF                 0
+Delay             100
+diagnosis           0
+subject_id          0
+processed_path      0
+dtype: int64
+Selected 9 features: ['Age', 'sex_encoded', 'hand_encoded', 'Educ', 'SES', 'MMSE', 'eTIV', 'nWBV', 'ASF']
+
+Final dataset shape: (100, 13)
+
+Diagnosis distribution:
+diagnosis
+CN     59
+MCI    28
+AD     13
+Name: count, dtype: int64
+
+[6/7] Creating Stratified Train/Val/Test Splits
+Train set: 60 samples (60.0%)
+Val set:   20 samples (20.0%)
+Test set:  20 samples (20.0%)
+
+Class distribution in splits:
+
+Train:
+  CN: 35 (58.3%)
+  MCI: 17 (28.3%)
+  AD: 8 (13.3%)
+
+Val:
+  CN: 12 (60.0%)
+  MCI: 6 (30.0%)
+  AD: 2 (10.0%)
+
+Test:
+  CN: 12 (60.0%)
+  MCI: 5 (25.0%)
+  AD: 3 (15.0%)
+Saved splits and encoders to: D:\Projects\AI-Projects\Alzimers\data\splits
+
+[7/7] Creating DataLoaders
+Train loader: 8 batches (batch_size=8)
+Val loader:   3 batches
+Test loader:  3 batches
+Image shape: torch.Size([8, 3, 128, 128])
+Features shape: torch.Size([8, 9])
+Labels: tensor([1, 1, 1, 1, 0, 1, 2, 1])
+
+Saving EDA plots...
+Saved EDA plots to: D:\Projects\AI-Projects\Alzimers\visualizations\oasis1_eda.png
+
+OASIS-1 Dataset Summary:
+------------------------
+Total subjects:         100
+Train set:              60 (60.0%)
+Validation set:         20 (20.0%)
+Test set:               20 (20.0%)
+
+Classes:                ['CN', 'MCI', 'AD']
+Number of classes:      3
+Input features:         9
+Image size:             128 x 128 (memory optimized)
+Batch size:             8
+  CN: 12 (60.0%)
+  MCI: 5 (25.0%)
+  AD: 3 (15.0%)
+
+Files Saved:
+------------
+Processed MRI dir:     D:\Projects\AI-Projects\Alzimers\data\processed\mri_slices
+Train/Val/Test CSVs:   D:\Projects\AI-Projects\Alzimers\data\splits
+Scalers/Encoders:      D:\Projects\AI-Projects\Alzimers\data\splits\label_encoders.pkl and D:\Projects\AI-Projects\Alzimers\data\splits\scaler.pkl
+DataLoader Info:       D:\Projects\AI-Projects\Alzimers\data\processed\dataloader_info.json
+EDA Plot:              D:\Projects\AI-Projects\Alzimers\visualizations\oasis1_eda.png
+
+READY FOR TRAINING!

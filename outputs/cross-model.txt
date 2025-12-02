@@ -1,0 +1,299 @@
+(venv) (base) PS D:\Projects\AI-Projects\Alzimers> python notebook3_knoadnet_core.py
+✓ Using device: cpu
+✓ CPU threads: 8
+
+================================================================================
+                     KNOADNET - PHASE 3: MAIN MODEL (FIXED)
+================================================================================
+
+✓ Using CPU (PyTorch doesn't support AMD GPU natively)
+
+[1/5] Loading data...
+✓ Train: 60 samples
+✓ Val:   20 samples
+✓ Test:  20 samples
+
+[2/5] Building model...
+
+Model Summary:
+  Total parameters: 14.54M
+  vit: 5.52M
+  vit_proj: 148.22K
+  tab_embedding: 1.54K
+  tab_transformer: 264.96K
+  cross_attention: 8.37M
+  classifier: 230.91K
+
+[3/5] Training for 40 epochs...
+================================================================================
+
+Epoch 1/40
+--------------------------------------------------------------------------------
+Training:   0%|                                                                                                                     | 0/15 [00:00<?, ?it/s]✓ Using device: cpu
+✓ CPU threads: 8
+✓ Using device: cpu
+✓ CPU threads: 8
+Training: 100%|███████████████████████████████████████████████████████████████████████████████████| 15/15 [00:45<00:00,  3.06s/it, loss=1.2439, acc=0.2833]
+Validating:   0%|                                                                                                                    | 0/5 [00:00<?, ?it/s]✓ Using device: cpu
+✓ CPU threads: 8
+✓ Using device: cpu
+✓ CPU threads: 8
+Validating: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:20<00:00,  4.11s/it]
+Train Loss: 1.2439, Train Acc: 0.2833
+Val Loss:   1.1641, Val Acc:   0.1000
+LR:         0.000100
+✓ Saved best model (val_acc: 0.1000)
+
+Epoch 2/40
+--------------------------------------------------------------------------------
+Training:   0%|                                                                                                                     | 0/15 [00:00<?, ?it/s]✓ Using device: cpu
+✓ CPU threads: 8
+✓ Using device: cpu
+✓ CPU threads: 8
+Training: 100%|███████████████████████████████████████████████████████████████████████████████████| 15/15 [00:46<00:00,  3.13s/it, loss=1.1194, acc=0.4333]
+Validating:   0%|                                                                                                                    | 0/5 [00:00<?, ?it/s]✓ Using device: cpu
+✓ CPU threads: 8
+✓ Using device: cpu
+✓ CPU threads: 8
+Validating: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:20<00:00,  4.07s/it]
+Train Loss: 1.1194, Train Acc: 0.4333
+Val Loss:   1.0761, Val Acc:   0.5000
+LR:         0.000099
+✓ Saved best model (val_acc: 0.5000)
+
+Epoch 3/40
+--------------------------------------------------------------------------------
+Training:   0%|                                                                                                                     | 0/15 [00:00<?, ?it/s]✓ Using device: cpu
+✓ CPU threads: 8
+✓ Using device: cpu
+✓ CPU threads: 8
+Training: 100%|███████████████████████████████████████████████████████████████████████████████████| 15/15 [00:45<00:00,  3.04s/it, loss=1.1762, acc=0.3333]
+Validating:   0%|                                                                                                                    | 0/5 [00:00<?, ?it/s]✓ Using device: cpu
+✓ CPU threads: 8
+✓ Using device: cpu
+✓ CPU threads: 8
+Validating: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:21<00:00,  4.22s/it]
+Train Loss: 1.1762, Train Acc: 0.3333
+Val Loss:   1.0413, Val Acc:   0.6000
+LR:         0.000099
+✓ Saved best model (val_acc: 0.6000)
+
+Epoch 4/40
+--------------------------------------------------------------------------------
+Training:   0%|                                                                                                                     | 0/15 [00:00<?, ?it/s]✓ Using device: cpu
+✓ CPU threads: 8
+✓ Using device: cpu
+✓ CPU threads: 8
+Training: 100%|███████████████████████████████████████████████████████████████████████████████████| 15/15 [00:45<00:00,  3.04s/it, loss=1.1628, acc=0.3333]
+Validating:   0%|                                                                                                                    | 0/5 [00:00<?, ?it/s]✓ Using device: cpu
+✓ CPU threads: 8
+✓ Using device: cpu
+✓ CPU threads: 8
+Validating: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:20<00:00,  4.14s/it]
+Train Loss: 1.1628, Train Acc: 0.3333
+Val Loss:   1.1017, Val Acc:   0.2500
+LR:         0.000098
+
+Epoch 5/40
+--------------------------------------------------------------------------------
+Training:   0%|                                                                                                                     | 0/15 [00:00<?, ?it/s]✓ Using device: cpu
+✓ CPU threads: 8
+✓ Using device: cpu
+✓ CPU threads: 8
+Training: 100%|███████████████████████████████████████████████████████████████████████████████████| 15/15 [00:45<00:00,  3.04s/it, loss=1.1612, acc=0.4500]
+Validating:   0%|                                                                                                                    | 0/5 [00:00<?, ?it/s]✓ Using device: cpu
+✓ CPU threads: 8
+Validating:  20%|█████████████████████▌                                                                                      | 1/5 [00:17<01:11, 17.94s/it]✓ Using device: cpu
+✓ CPU threads: 8
+Validating: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:20<00:00,  4.10s/it]
+Train Loss: 1.1612, Train Acc: 0.4500
+Val Loss:   1.0601, Val Acc:   0.6000
+LR:         0.000096
+
+Epoch 6/40
+--------------------------------------------------------------------------------
+Training:   0%|                                                                                                                     | 0/15 [00:00<?, ?it/s]✓ Using device: cpu
+✓ CPU threads: 8
+✓ Using device: cpu
+✓ CPU threads: 8
+Training: 100%|███████████████████████████████████████████████████████████████████████████████████| 15/15 [00:45<00:00,  3.04s/it, loss=1.1650, acc=0.3833]
+Validating:   0%|                                                                                                                    | 0/5 [00:00<?, ?it/s]✓ Using device: cpu
+✓ CPU threads: 8
+✓ Using device: cpu
+✓ CPU threads: 8
+Validating: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:20<00:00,  4.12s/it]
+Train Loss: 1.1650, Train Acc: 0.3833
+Val Loss:   1.0149, Val Acc:   0.6000
+LR:         0.000095
+
+Epoch 7/40
+--------------------------------------------------------------------------------
+Training:   0%|                                                                                                                     | 0/15 [00:00<?, ?it/s]✓ Using device: cpu
+✓ CPU threads: 8
+✓ Using device: cpu
+✓ CPU threads: 8
+Training: 100%|███████████████████████████████████████████████████████████████████████████████████| 15/15 [00:45<00:00,  3.06s/it, loss=1.0646, acc=0.4167]
+Validating:   0%|                                                                                                                    | 0/5 [00:00<?, ?it/s]✓ Using device: cpu
+✓ CPU threads: 8
+✓ Using device: cpu
+✓ CPU threads: 8
+Validating: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:20<00:00,  4.06s/it]
+Train Loss: 1.0646, Train Acc: 0.4167
+Val Loss:   1.1683, Val Acc:   0.4000
+LR:         0.000093
+
+Epoch 8/40
+--------------------------------------------------------------------------------
+Training:   0%|                                                                                                                     | 0/15 [00:00<?, ?it/s]✓ Using device: cpu
+✓ CPU threads: 8
+✓ Using device: cpu
+✓ CPU threads: 8
+Training: 100%|███████████████████████████████████████████████████████████████████████████████████| 15/15 [00:45<00:00,  3.03s/it, loss=1.2754, acc=0.2333]
+Validating:   0%|                                                                                                                    | 0/5 [00:00<?, ?it/s]✓ Using device: cpu
+✓ CPU threads: 8
+✓ Using device: cpu
+✓ CPU threads: 8
+Validating: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:20<00:00,  4.12s/it]
+Train Loss: 1.2754, Train Acc: 0.2333
+Val Loss:   0.9703, Val Acc:   0.6000
+LR:         0.000091
+
+Epoch 9/40
+--------------------------------------------------------------------------------
+Training:   0%|                                                                                                                     | 0/15 [00:00<?, ?it/s]✓ Using device: cpu
+✓ CPU threads: 8
+✓ Using device: cpu
+✓ CPU threads: 8
+Training: 100%|███████████████████████████████████████████████████████████████████████████████████| 15/15 [00:45<00:00,  3.05s/it, loss=1.1684, acc=0.3833]
+Validating:   0%|                                                                                                                    | 0/5 [00:00<?, ?it/s]✓ Using device: cpu
+✓ CPU threads: 8
+✓ Using device: cpu
+✓ CPU threads: 8
+Validating: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:20<00:00,  4.10s/it]
+Train Loss: 1.1684, Train Acc: 0.3833
+Val Loss:   1.0777, Val Acc:   0.5000
+LR:         0.000088
+
+Epoch 10/40
+--------------------------------------------------------------------------------
+Training:   0%|                                                                                                                     | 0/15 [00:00<?, ?it/s]✓ Using device: cpu
+✓ CPU threads: 8
+✓ Using device: cpu
+✓ CPU threads: 8
+Training: 100%|███████████████████████████████████████████████████████████████████████████████████| 15/15 [00:43<00:00,  2.93s/it, loss=1.1489, acc=0.4000]
+Validating:   0%|                                                                                                                    | 0/5 [00:00<?, ?it/s]✓ Using device: cpu
+✓ CPU threads: 8
+✓ Using device: cpu
+✓ CPU threads: 8
+Validating: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:15<00:00,  3.19s/it]
+Train Loss: 1.1489, Train Acc: 0.4000
+Val Loss:   1.0259, Val Acc:   0.4500
+LR:         0.000086
+
+Epoch 11/40
+--------------------------------------------------------------------------------
+Training:   0%|                                                                                                                     | 0/15 [00:00<?, ?it/s]✓ Using device: cpu
+✓ CPU threads: 8
+✓ Using device: cpu
+✓ CPU threads: 8
+Training: 100%|███████████████████████████████████████████████████████████████████████████████████| 15/15 [00:40<00:00,  2.70s/it, loss=1.1883, acc=0.3000]
+Validating:   0%|                                                                                                                    | 0/5 [00:00<?, ?it/s]✓ Using device: cpu
+✓ CPU threads: 8
+✓ Using device: cpu
+✓ CPU threads: 8
+Validating: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:15<00:00,  3.20s/it]
+Train Loss: 1.1883, Train Acc: 0.3000
+Val Loss:   1.0099, Val Acc:   0.6000
+LR:         0.000083
+
+Epoch 12/40
+--------------------------------------------------------------------------------
+Training:   0%|                                                                                                                     | 0/15 [00:00<?, ?it/s]✓ Using device: cpu
+✓ CPU threads: 8
+✓ Using device: cpu
+✓ CPU threads: 8
+Training: 100%|███████████████████████████████████████████████████████████████████████████████████| 15/15 [00:39<00:00,  2.61s/it, loss=1.1462, acc=0.3667]
+Validating:   0%|                                                                                                                    | 0/5 [00:00<?, ?it/s]✓ Using device: cpu
+✓ CPU threads: 8
+✓ Using device: cpu
+✓ CPU threads: 8
+Validating: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:16<00:00,  3.25s/it]
+Train Loss: 1.1462, Train Acc: 0.3667
+Val Loss:   1.0985, Val Acc:   0.3000
+LR:         0.000080
+
+Epoch 13/40
+--------------------------------------------------------------------------------
+Training:   0%|                                                                                                                     | 0/15 [00:00<?, ?it/s]✓ Using device: cpu
+✓ CPU threads: 8
+✓ Using device: cpu
+✓ CPU threads: 8
+Training: 100%|███████████████████████████████████████████████████████████████████████████████████| 15/15 [00:39<00:00,  2.61s/it, loss=1.0939, acc=0.4167]
+Validating:   0%|                                                                                                                    | 0/5 [00:00<?, ?it/s]✓ Using device: cpu
+✓ CPU threads: 8
+✓ Using device: cpu
+✓ CPU threads: 8
+Validating: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:16<00:00,  3.21s/it]
+Train Loss: 1.0939, Train Acc: 0.4167
+Val Loss:   1.0498, Val Acc:   0.6000
+LR:         0.000076
+
+Early stopping triggered after 13 epochs
+
+================================================================================
+Training complete! Best validation accuracy: 0.6000
+================================================================================
+
+[4/5] Final Evaluation on Test Set
+--------------------------------------------------------------------------------
+Validating:   0%|                                                                                                                    | 0/5 [00:00<?, ?it/s]✓ Using device: cpu
+✓ CPU threads: 8
+✓ Using device: cpu
+✓ CPU threads: 8
+Validating: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:16<00:00,  3.29s/it]
+
+Test Results:
+================================================================================
+Test Loss:     1.0355
+Test Accuracy: 0.6000
+================================================================================
+
+[5/5] Comparison with Baselines
+================================================================================
+Best Baseline (Concat Fusion): 0.6000
+KnoAD-Net (Fixed):             0.6000
+Improvement:                   +0.00%
+
+⚠ KnoAD-Net did not beat baseline (gap: 0.00%)
+   Try: More epochs, different augmentation, or larger dataset
+
+Detailed Classification Report:
+D:\Projects\AI-Projects\Alzimers\venv\Lib\site-packages\sklearn\metrics\_classification.py:1731: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+D:\Projects\AI-Projects\Alzimers\venv\Lib\site-packages\sklearn\metrics\_classification.py:1731: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+D:\Projects\AI-Projects\Alzimers\venv\Lib\site-packages\sklearn\metrics\_classification.py:1731: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+              precision    recall  f1-score   support
+
+          CN     0.0000    0.0000    0.0000         3
+         MCI     0.6000    1.0000    0.7500        12
+          AD     0.0000    0.0000    0.0000         5
+
+    accuracy                         0.6000        20
+   macro avg     0.2000    0.3333    0.2500        20
+weighted avg     0.3600    0.6000    0.4500        20
+
+
+================================================================================
+                                   COMPLETE!
+================================================================================
+
+
+Results saved to: D:\Projects\AI-Projects\Alzimers\results/knoadnet_fixed_results.json
+Model saved to:   D:\Projects\AI-Projects\Alzimers\models/knoadnet_best_fixed.pth
+
+Next steps:
+1. If test accuracy > baseline: Proceed to Phase 5 (Evaluation)
+2. If still overfitting: Try collecting more data or increase regularization further
+3. Run: python phase5_evaluation.py

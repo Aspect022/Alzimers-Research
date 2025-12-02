@@ -1,0 +1,4 @@
+Model,Test Accuracy,Val Accuracy
+ViT-Only,0.6,0.65
+TabTransformer,0.8,0.8
+Concat Fusion,0.6,0.6

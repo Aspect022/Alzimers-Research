@@ -1,0 +1,5 @@
+Split,n,CN,MCI,AD
+Train,60,-,-,-
+Validation,20,-,-,-
+Test,20,3,12,5
+Total,100,-,-,-

@@ -95,13 +95,7 @@ wandb/
 # MLflow
 mlruns/
 
-# ============================================================================
-# RESULTS & OUTPUTS
-# ============================================================================
-# Results directory (contains experiment outputs)
-results/
-outputs/
-visualizations/
+
 
 
 
