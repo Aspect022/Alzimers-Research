@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 📚 Documentation
+    url: https://github.com/Aspect022/Alzimers-Research/blob/main/docs/PROJECT_DOCUMENTATION.md
+    about: Read the complete project documentation
+  - name: 💬 GitHub Discussions
+    url: https://github.com/Aspect022/Alzimers-Research/discussions
+    about: Ask questions and discuss ideas with the community
+  - name: 🔒 Security Issue
+    url: https://github.com/Aspect022/Alzimers-Research/security/advisories/new
+    about: Report security vulnerabilities privately
