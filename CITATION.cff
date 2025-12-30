@@ -1,0 +1,71 @@
+cff-version: 1.2.0
+message: "If you use this software in your research, please cite it as below."
+type: software
+title: "KnoAD-Net: Knowledge-Augmented Alzheimer's Detection Network"
+abstract: "A multi-modal deep learning system for Alzheimer's Disease detection that combines Vision Transformers for MRI analysis with clinical features through cross-modal attention, enhanced with Retrieval-Augmented Generation for explainable predictions."
+authors:
+  - family-names: "KnoAD-Net Contributors"
+    email: "aspect022@users.noreply.github.com"
+repository-code: "https://github.com/Aspect022/Alzimers-Research"
+url: "https://github.com/Aspect022/Alzimers-Research"
+license: MIT
+version: 1.0.0
+date-released: 2025-12-30
+keywords:
+  - Alzheimer's Disease
+  - Deep Learning
+  - Multi-Modal Learning
+  - Vision Transformer
+  - Medical AI
+  - Explainable AI
+  - RAG
+  - MRI Analysis
+  - Clinical Decision Support
+  - OASIS Dataset
+references:
+  - type: article
+    authors:
+      - family-names: "Marcus"
+        given-names: "Daniel S"
+      - family-names: "Wang"
+        given-names: "Tracy H"
+      - family-names: "Parker"
+        given-names: "Jamie"
+      - family-names: "Csernansky"
+        given-names: "John G"
+      - family-names: "Morris"
+        given-names: "John C"
+      - family-names: "Buckner"
+        given-names: "Randy L"
+    title: "Open Access Series of Imaging Studies (OASIS): Cross-sectional MRI Data in Young, Middle Aged, Nondemented, and Demented Older Adults"
+    journal: "Journal of Cognitive Neuroscience"
+    year: 2007
+    volume: 19
+    issue: 9
+    start: 1498
+    end: 1507
+    doi: "10.1162/jocn.2007.19.9.1498"
+  - type: conference-paper
+    authors:
+      - family-names: "Dosovitskiy"
+        given-names: "Alexey"
+    title: "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale"
+    conference:
+      name: "International Conference on Learning Representations (ICLR)"
+    year: 2021
+  - type: conference-paper
+    authors:
+      - family-names: "Vaswani"
+        given-names: "Ashish"
+    title: "Attention is All You Need"
+    conference:
+      name: "Neural Information Processing Systems (NeurIPS)"
+    year: 2017
+  - type: conference-paper
+    authors:
+      - family-names: "Lewis"
+        given-names: "Patrick"
+    title: "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks"
+    conference:
+      name: "Neural Information Processing Systems (NeurIPS)"
+    year: 2020
